@@ -2,7 +2,14 @@ SketchyGAN: Towards Diverse and Realistic Sketch to Image Synthesis
 =====================================
 
 Code for ["SketchyGAN: Towards Diverse and Realistic Sketch to Image Synthesis"](https://arxiv.org/abs/1801.02753).
-
+- [SketchyGAN: Towards Diverse and Realistic Sketch to Image Synthesis](#sketchygan-towards-diverse-and-realistic-sketch-to-image-synthesis)
+  - [Prerequisites](#prerequisites)
+  - [Preparations](#preparations)
+  - [Dataset](#dataset)
+  - [Configurations](#configurations)
+  - [Model](#model)
+  - [Citation](#citation)
+  - [Credits](#credits)
 
 ## Prerequisites
 
