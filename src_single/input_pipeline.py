@@ -159,19 +159,19 @@ def get_paired_input(paired_filenames, test_mode, distance_map=True, img_dim=(25
     #     image = tf.image.resize_images(image, img_dim, method=tf.image.ResizeMethod.AREA)
     #     sketch = tf.image.resize_images(sketch, img_dim, method=tf.image.ResizeMethod.AREA)
 
-    # Augmentation
-    # Image
-    image = tf.image.random_brightness(image, max_delta=0.3)
-    image = tf.image.random_contrast(image, lower=0.8, upper=1.2)
-    # image_large = tf.image.random_hue(image_large, max_delta=0.05)
+    # # Augmentation
+    # # Image
+    # image = tf.image.random_brightness(image, max_delta=0.3)
+    # image = tf.image.random_contrast(image, lower=0.8, upper=1.2)
+    # # image_large = tf.image.random_hue(image_large, max_delta=0.05)
 
-    # Normalization
-    image = (image - tf.reduce_min(image)) / (tf.reduce_max(image) - tf.reduce_min(image) + 1)
-    image += tf.random_uniform(shape=image.shape, minval=0., maxval=1. / 256)  # dequantize
-    sketch = sketch / 255.
+    # # Normalization
+    # image = (image - tf.reduce_min(image)) / (tf.reduce_max(image) - tf.reduce_min(image) + 1)
+    # image += tf.random_uniform(shape=image.shape, minval=0., maxval=1. / 256)  # dequantize
+    # sketch = sketch / 255.
 
-    image = image * 2. - 1
-    sketch = sketch * 2. - 1
+    # image = image * 2. - 1
+    # sketch = sketch * 2. - 1
 
     # Transpose for data format
     if data_format == 'NCHW':
